@@ -9,7 +9,12 @@ public class Main {
     public static void main(String[] args) {
         DieCup dc = new DieCup();
 
-        int noOfRolls = 10;
+        if(args.length == 0){
+            System.err.println("Forventer et argument: antallet af kast.");
+            System.exit(0);
+        }
+
+        int noOfRolls = Integer.parseInt(args[0]);
         for(int i=0; i<noOfRolls; i++){
             dc.roll();
             System.out.println(i+" geteyes: "+dc.getEyes());
