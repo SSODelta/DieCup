@@ -10,7 +10,7 @@ public class Main {
         DieCup dc = new DieCup();
 
         if(args.length == 0){
-            System.err.println("Forventer et argument: antallet af kast.");
+            System.err.println("Forventer ét argument: antallet af kast.");
             System.exit(0);
         }
 
